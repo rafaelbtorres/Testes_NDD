@@ -4,6 +4,17 @@
 Resolvi escrever os testes de duas formas, utilizando Robot Framework e Cypress.
 
 
+## Como rodar os testes escritos em Cypress
+Para executar os testes escrutos em Cypress, siga os comandos:
+
+npm install -g npm@11.3.0
+
+npm install cypress --save-dev
+
+npx cypress open
+
+
+
 ## Como rodar os testes escritos em Robot
 
 Para executar os testes escritos em Robot siga os seguintes passos:
@@ -39,14 +50,7 @@ poetry shell
 Para rodar todos os testes, execute o comando: 
 
 robot -d reports/ -vGLOBAL_DEBUG_BROWSER:true .
-## Como rodar os testes escritos em Cypress
-Para executar os testes escrutos em Cypress, siga os comandos:
 
-npm install -g npm@11.3.0
-
-npm install cypress --save-dev
-
-npx cypress open
 ## Minhas considerações
 Mesmo tendo mais familiaridade com o Robot, achei muito mais fácil e rápido escrever testes em Cypress, além de ser mais simples de preparar o ambiente.
 
