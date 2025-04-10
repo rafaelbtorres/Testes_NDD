@@ -8,4 +8,17 @@ Test Teardown       Close Browser                                               
 *** Test Cases ***
 Acessar pagina de produtos
     Acessar Página do SauceDemo
+    Fazer login com usuario e senha corretos
     Validar se os produtos estao sendo listados corretamente
+
+
+Reoganizar os produtos de A a Z
+    Acessar Página do SauceDemo
+    Fazer login com usuario e senha corretos
+    Reoganizar os produtos de A a Z
+
+
+Reorganizar os produtos de Z a A
+    Acessar Página do SauceDemo
+    Fazer login com usuario e senha corretos
+    Reoganizar os produtos de Z a A

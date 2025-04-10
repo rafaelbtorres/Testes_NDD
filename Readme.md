@@ -61,3 +61,5 @@ Porém, me pareceu que o Cypress tem uma certa limitação com o que pode ser fe
 1- Comentei todas as linhas de código por ser um teste, sei que não é uma boa prática.
 
 2 - Em alguns testes eu usei o ID do elemento e em outros o data-test, isso foi intencional para mostrar que daria pra usar os dois, mas em um projeto real seria bom padronizar.
+
+3 - Escrevi os testes de robot em sua maioria em Inglês por questão de costume, porém deixei os Tests Case em português. Em um projeto real, dependendo da empresa, seria tudo padronizado na mesma linguagem (Exceto algumas keywords próprias de algumas bibliotecas que são obrigatórias em inglês)
