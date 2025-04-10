@@ -13,12 +13,12 @@ ${LOCKED_USERNAME}        locked_out_user                     #Variavel com o us
 
 *** Keywords ***
 Acessar Página do SauceDemo
-    New Browser    chromium       headless=${False}           #Abre um novo browser
-    New Context                                               #Inicia uma nova sessão de navegação
-    New Page       ${URL}                                     #Acessa a URL
-    Wait For Elements State       id=user-name    visible     #Valida se o elemento do input do user-name está visivel
-    ${TITLE}   Get Title                                      #Recupera o titulo da pagina
-    Should Be Equal As Strings    ${TITLE}    Swag Labs       #Valida se o titulo da página está correto
+    New Browser    firefox        headless=${False}     timeout=20s           #Abre um novo browser
+    New Context                                                               #Inicia uma nova sessão de navegação
+    New Page       ${URL}                                                     #Acessa a URL
+    Wait For Elements State       id=user-name    visible                     #Valida se o elemento do input do user-name está visivel
+    ${TITLE}   Get Title                                                      #Recupera o titulo da pagina
+    Should Be Equal As Strings    ${TITLE}    Swag Labs                       #Valida se o titulo da página está correto
                         
 
 Fazer login com usuario e senha corretos
