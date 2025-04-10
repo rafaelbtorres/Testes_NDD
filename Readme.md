@@ -55,3 +55,9 @@ robot -d reports/ -vGLOBAL_DEBUG_BROWSER:true .
 Mesmo tendo mais familiaridade com o Robot, achei muito mais fácil e rápido escrever testes em Cypress, além de ser mais simples de preparar o ambiente.
 
 Porém, me pareceu que o Cypress tem uma certa limitação com o que pode ser feito em relação a testes avançados, coisas que no Robot seria mais simples de criar.
+
+## Observações
+
+1- Comentei todas as linhas de código por ser um teste, sei que não é uma boa prática.
+
+2 - Em alguns testes eu usei o ID do elemento e em outros o data-test, isso foi intencional para mostrar que daria pra usar os dois, mas em um projeto real seria bom padronizar.
