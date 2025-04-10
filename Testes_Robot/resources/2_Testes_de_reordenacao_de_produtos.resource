@@ -12,10 +12,12 @@ ${ZA_VALUE}               css=[value="za"]                                      
 
 *** Keywords ***
 Validar se os produtos estao sendo listados corretamente
-    Wait For Elements State            ${PAGE_HEADER}     visible                          #Aguarda aparecer o titulo da página
-    ${PRODUCTS_NAME}    Coletar Todos Os Nomes Dos Produtos                                #Armazena o retorno da keword em um array
-    ${TOTAL}            Get Length    ${PRODUCTS_NAME}                                     #Armazena o tamanho da array em uma variavel                               
-    Should Be True      ${TOTAL} > 0                                                       #Verifica se existe pelo menos um produto sendo listado
+    Wait For Elements State       ${PAGE_HEADER}     visible                              #Aguarda aparecer o titulo da página
+    ${TITLE}                      Get Text    ${PAGE_HEADER}                              #Pega o texto do titulo da pagina e armazena em uma variavel
+    Should Be Equal As Strings    ${TITLE}    Products                                    #Verifica se o titulo da página é o correto
+    ${PRODUCTS_NAME}    Coletar Todos Os Nomes Dos Produtos                               #Armazena o retorno da keword em um array
+    ${TOTAL}            Get Length    ${PRODUCTS_NAME}                                    #Armazena o tamanho da array em uma variavel                               
+    Should Be True      ${TOTAL} > 0                                                      #Verifica se existe pelo menos um produto sendo listado
 
 
 Coletar Todos Os Nomes Dos Produtos
